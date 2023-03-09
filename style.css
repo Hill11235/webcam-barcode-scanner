@@ -1,0 +1,11 @@
+.scanner-box {
+  width: 480px;
+  height: 320px;
+  background-color: #9a9a9a;
+  position: relative;
+  margin-top: 10px;
+}
+#scanner-container {
+  position: relative;
+  height: inherit;
+}
