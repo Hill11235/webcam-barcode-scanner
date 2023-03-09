@@ -5,6 +5,7 @@ let skuBarCode = "T001XPII6E-Y";
 form.addEventListener("submit", submitBarcode);
 
 function submitBarcode(event) {
+  //TODO: set skuBarCode on first scan
   const barcodeValue = inp.value;
   if (checkValidBarcode(barcodeValue)) {
     console.log(barcodeValue);
