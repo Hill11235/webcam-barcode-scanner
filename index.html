@@ -4,10 +4,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
     <div class="scanner-box">
       <div id="reader-container" class="main_scanner"></div>
-      <div id="text-container" class="main_text">
-        <p>"Here"</p>
-      <input id="scan-input" autofocus></input>
     </div>
-    <script src="scan.js"></script>
+    <form id="hidden-form">
+      <input type="text" id="scan-input" autofocus></input>
+    </form>
+    <script src="barcodeScannerHandheld.js"></script>
   </body>
 </html>
