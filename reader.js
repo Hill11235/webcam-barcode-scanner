@@ -35,11 +35,13 @@ navigator.mediaDevices
       {
         numOfWorkers: 4,
         frequency: 10,
+        halfSample: false,
+        resolution: 1280,
         locate: true,
         inputStream: {
           name: "Live",
           type: "LiveStream",
-          target: document.querySelector("#scanner-container"),
+          target: document.querySelector("#reader-container"),
           constraints: {
             width: { min: 640, ideal: 1280, max: 1920 },
             height: { min: 480, ideal: 720, max: 1080 },
@@ -48,10 +50,10 @@ navigator.mediaDevices
           },
         },
         decoder: {
-          readers: codeFormats,
+          readers: ["code_128_reader"],
         },
         locator: {
-          patchSize: "medium", // x-small, small, medium, large, x-large
+          patchSize: "small", // x-small, small, medium, large, x-large
         },
       },
       function (err) {
